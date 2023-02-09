@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://quantisland.com/assets/favicon_package/favicon.ico"
+    type="image/x-icon"
+  />
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("qunPZz6UPsAhTihEs");
+    })();
+  </script>
+  <title>{%if page.title%}{{page.title}}{%else%}{{site.title}}{%endif%}</title>
+</head>

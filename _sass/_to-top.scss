@@ -1,0 +1,21 @@
+.to-top {
+  display: none;
+  @media only screen and (max-width: $bp-phone-big) {
+    background-color: $cl-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 4.5rem;
+    right: 3rem;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+    display: none;
+    z-index: 5;
+  }
+}
+
+.show-to-top {
+  display: flex;
+}

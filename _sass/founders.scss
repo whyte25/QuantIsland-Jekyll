@@ -1,0 +1,52 @@
+// FOUNDER
+
+.founders {
+  .founders-heading {
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .founder-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-phone) {
+      padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-small) {
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
+  }
+
+  .founder-container {
+    @media only screen and (max-width: $bp-phone-small) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .founder-img-container {
+    max-width: 30rem;
+
+    .founder-img {
+      width: 80%;
+      border-radius: 1rem;
+    }
+  }
+
+  .founder-name {
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .founder-sub-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+}

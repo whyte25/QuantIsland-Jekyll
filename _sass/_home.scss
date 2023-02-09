@@ -1,0 +1,67 @@
+.home {
+  background-image: url(/image//background-image.png);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-phone-big) {
+    height: 90vh;
+  }
+
+  .content-container {
+    text-align: center;
+    width: max-content;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $cl-white;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-phone-big) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-big) {
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
+    @media only screen and (max-width: $bp-phone) {
+      font-size: 2.3rem;
+    }
+
+    @media only screen and (max-width: $bp-phone-small) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-mobile-s) {
+      font-size: 1.7rem;
+    }
+
+    &-primary {
+      display: block;
+      animation: fromleft 1s;
+    }
+    &-secondary {
+      display: block;
+      animation: fromleft 1s;
+    }
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+    color: $cl-white;
+    margin-bottom: 3rem;
+    animation: fromright 1s;
+
+    @media only screen and (max-width: $bp-phone-small) {
+      font-size: 1.2rem;
+    }
+  }
+}
